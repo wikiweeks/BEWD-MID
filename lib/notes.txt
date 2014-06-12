@@ -1,0 +1,38 @@
+Midterm Due Thursday June 11, 2014
+
+Instructions
+
+Your assignment: create a command line based application (similar to Secret Number) that fulfills the following criteria:
+
+1. Takes user input and handles bad input appropriately (i.e. if you expect numbers and recieve a string)
+
+2. Connects to a 3rd party API - the API call should change depending on the user input
+
+3. Must be object oriented. Create classes and instantiate them. The only file that can run without classes is your runner.
+
+4. Create a public repository and push your file code on Github. Please submit the link to your repository for this assignment.
+
+This is a very open-ended assignment. Feel free to get creative! If there are any special features of your application that you would like to point out, please write about them in the README.
+
+
+
+
+Name: ?
+Idea: Ask the user to enter a baseball team and return players from that team
+
+
+
+Creating an API Request
+To make an API request, you’ll need to:
+Have your developer key handy
+Know the resource you're looking to retrieve
+Know the format (i.e. JSON, XML) you want the response to be returned in
+Here’s an example of an API request:
+URI Format: HTTP GET http://api.espn.com/:version/:resource/:method?apikey=:yourkey
+
+General URI Parameters Accepted
+PARAMETER	DESCRIPTION	SAMPLE VALUE
+apikey	String - developer key assigned to your account (Required)	yourkey
+limit	Integer - used to limit the number of results returned	5
+offset	Integer - used for pagination.	11 (will start with the 11th entry in the response)
+_accept	String - used when you can not set the Accepted header. The most common case of this would be while making JSONP requests via JavaScript	text/xml
